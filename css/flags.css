@@ -1,71 +1,238 @@
 /* Drapeau du Japon */
 #japon .flag {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#japon .cercle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #bc002e;
 }
 
 /* --------------------*/
 
-/* Drapeau de l'Arménie */
+/* Drapeau de l'ArmÃĐnie */
 #armenie .flag{
-  
+  display: flex;
+  flex-direction: column;
 }
 
+#armenie .bande {
+  height: 100%;
+}
+
+#armenie .rouge {
+  background: #d90013;
+}
+
+#armenie .bleu {
+  background: #0133a0;
+}
+
+#armenie .jaune {
+  background: #f2a801;
+}
 
 /* --------------------*/
 
-/* Drapeau de la Côte d'Ivoire */
+/* Drapeau de la CÃīte d'Ivoire */
 #cote-ivoire .flag{
-    
-}
+    display: flex;
+  }
   
-
+  #cote-ivoire .colonne {
+    width: 100%;
+  }
+  
+  #cote-ivoire .orange {
+    background-color: #f88001;
+  }
+  
+  #cote-ivoire .vert {
+    background-color: #009f65;
+  }
 /* --------------------*/
 
 /* Drapeau de l'Estonie */
 
 #estonie .flag{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #0072ce;
+}
+
+#estonie .bande{
+    width: 100%;
+    height: 33.33%;
+}
+
+#estonie .noir{
+    background-color: black;
+}
+
+#estonie .blanc{
+    background-color: white;
 }
 
 /* --------------------*/
 
 /* Drapeau des Palaos */
 #palaos .flag{
-    
+    display: flex;
+    align-items: center;
+    background: #0099ff;
+}
+
+#palaos .cercle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: #ffff00;
+    margin-left: 20%;
   }
-  
 /* --------------------*/
 
 /* Drapeau de Madagascar */
 
 #madagascar .flag{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#madagascar .bande {
+    width: 66%;
+    height: 100%;
+}
+
+#madagascar .bande.vert{
+    background: #00843d;
+}
+
+#madagascar .bande.orange{
+    background: #f94239;
 }
 
 /* --------------------*/
 
 /* Drapeau de la Gambie */
 #gambie .flag{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#gambie .bande{
+    width: 100%;
+    height: 33.33%;
+}
+
+#gambie .rouge{
+    background-color: #ce1226;
+}
+
+#gambie .bleu{
+    background: #0c1c8c;
+    height: 22%;
+}
+
+#gambie .vert{
+    background: #3b7728;
 }
 
 /* --------------------*/
 
 /* Drapeau du Panama */
 #panama .flag{
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  #panama .rectangle {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #panama .bleu {
+    background-color: #005293;
+  }
+  
+  #panama .rouge {
+    background-color: #d20f34;
   }
 /* --------------------*/
 
 /* Drapeau du Laos */
 #laos .flag {
-    
+    display: flex;
+    background: #002868;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+
+
+#laos .rouge{
+    background: #ce1226;
+    width: 100%;
+    height: 25%;
+}
+
+#laos .bleu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#laos .cercle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: white;
 }
 /* --------------------*/
 
-/* Drapeau du Libéria */
+/* Drapeau du LibÃĐria */
 #liberia .flag{
-    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#liberia .rectangle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45.5%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#liberia .bleu{
+    background-color: #002868;
+
+}
+
+#liberia .bande{
+    height: 100%;
+    width: 100%;
+}
+
+#liberia .rouge{
+    background: #bf0a30;
 }
 
 /* --------------------*/
@@ -73,7 +240,18 @@
 /* Drapeau du Botswana */
 
 #botswana .flag{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6da9d2;
+
+}
+
+#botswana .noir{
+    height: 16.5%;
+    background-color: black;
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
 }
 
 /* ------------------*/
@@ -81,21 +259,95 @@
 
 /* Drapeau du Burkina Faso */
 #burkina-faso .flag{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
+#burkina-faso .bande{
+    width:100%;
+    height: 100%;
+}
+
+#burkina-faso .vert{
+    background: #019e48;
+}
+
+#burkina-faso .rouge{
+    background: #ef2a2e;
+}
+
+#burkina-faso .flag img{
+    position: absolute;
+    top: 33.33%;
+    left: 40%;
 }
 
 
-/* Drapeau de la Norvège */
+/* Drapeau de la NorvÃĻge */
 
 #norvege .flag {
-    
+    background-color: #032668;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
+#norvege .rectangle{
+    background-color: #ef2d31;
+}
+
+#norvege .rectangle:nth-child(1){
+    width: 30%;
+    height: 36.5%;
+    border-right: 23px solid white;
+    border-bottom: 23px solid white;
+}
+
+#norvege .rectangle:nth-child(2){
+    width: 53%;
+    height: 36.5%;
+    border-left: 23px solid white;
+    border-bottom: 23px solid white;
+}
+
+#norvege .rectangle:nth-child(3){
+    width: 30%;
+    height: 36.5%;
+    border-right: 23px solid white;
+    border-top: 23px solid white;
+}
+
+#norvege .rectangle:nth-child(4){
+    width: 53%;
+    height: 36.5%;
+    border-left: 23px solid white;
+    border-top: 23px solid white;
+}
 /* --------------------*/
 
 
 /* Drapeau de la RDC */
 
 #rdc .flag{
+    overflow: hidden;
+    background-color: #027ffe;
+    position: relative;
+}
 
+#rdc .flag img{
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: 5%;
+}
+
+#rdc .rouge{
+    width: 130%;
+    height: 18%;
+    background-color: #ce0f22;
+    border: 18px solid #f8d617;
+    transform:
+    translateX(-100px) translateY(135px) rotate(-32deg); 
 }
