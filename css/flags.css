@@ -1,6 +1,17 @@
 /* Drapeau du Japon */
 #japon .flag {
-  
+  background: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+   }
+ 
+#japon.cercle{
+  color: red;
+height: 100%;
+width: 100px;
+background: white;
 }
 
 /* --------------------*/
